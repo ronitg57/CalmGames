@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Motion reduce support */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Calm base styles */
+body {
+  @apply bg-calm-50 text-calm-800 antialiased;
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-sky-500;
+}
+
+button:focus-visible {
+  @apply outline-2 outline-offset-2 outline-sky-500;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  @apply outline-2 outline-offset-2 outline-sky-500;
+}
+
+/* Soft shadows */
+.shadow-soft {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.shadow-soft-lg {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
