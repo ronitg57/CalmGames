@@ -148,7 +148,7 @@ export default function LoveNotesPage() {
           <ul className="space-y-1 text-xs text-calm-700">
             <li>• Write messages to yourself for hard days</li>
             <li>• Share with trusted ones you want to hear from</li>
-            <li>• Open when you need a reminder you're loved</li>
+            <li>• Open when you need a reminder you&apos;re loved</li>
             <li>• Keep messages short and genuine</li>
           </ul>
         </motion.div>

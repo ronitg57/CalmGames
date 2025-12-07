@@ -159,7 +159,7 @@ export default function BreathePage() {
           className="text-center flex-1"
         >
           <h1 className="text-2xl sm:text-3xl font-bold text-calm-900">Breathe With Me</h1>
-          <p className="text-xs sm:text-sm text-calm-600 mt-1">Follow the bubble. You're safe.</p>
+          <p className="text-xs sm:text-sm text-calm-600 mt-1">Follow the bubble. You&apos;re safe.</p>
         </motion.div>
         <div className="w-12"></div>
       </div>

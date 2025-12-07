@@ -156,7 +156,7 @@ export default function GardenPage() {
             className="bg-white rounded-lg p-6 shadow-soft mb-4"
           >
             <label className="block text-sm font-medium text-calm-900 mb-3">
-              What's worrying you?
+              What&apos;s worrying you?
             </label>
             <input
               type="text"
@@ -197,7 +197,7 @@ export default function GardenPage() {
           <h3 className="font-semibold text-calm-900 mb-2 text-sm">Garden tips:</h3>
           <ul className="space-y-1 text-xs text-calm-700">
             <li>• Plant worries to externalize them</li>
-            <li>• Tap "Transform" to reframe them as growth</li>
+            <li>• Tap &quot;Transform&quot; to reframe them as growth</li>
             <li>• Your garden grows with every reframe</li>
             <li>• No wrong way to garden</li>
           </ul>

@@ -99,7 +99,7 @@ export default function HandPage() {
           className="text-center flex-1"
         >
           <h1 className="text-2xl sm:text-3xl font-bold text-calm-900">Hold My Hand</h1>
-          <p className="text-xs sm:text-sm text-calm-600 mt-1">You don't have to face this alone</p>
+          <p className="text-xs sm:text-sm text-calm-600 mt-1">You don&apos;t have to face this alone</p>
         </motion.div>
         <div className="w-12 text-center">
           <span className="text-xs font-bold text-rose-600">{sessionCount.count}</span>
@@ -255,7 +255,7 @@ export default function HandPage() {
           transition={{ delay: 0.4 }}
           className="text-center text-xs text-calm-600 mb-6"
         >
-          <p>You've reached out <span className="font-bold text-rose-600">{sessionCount.count}</span> times</p>
+          <p>You&apos;ve reached out <span className="font-bold text-rose-600">{sessionCount.count}</span> times</p>
           <p className="text-xs text-calm-500 mt-1">✨ Every moment of care matters</p>
         </motion.div>
 

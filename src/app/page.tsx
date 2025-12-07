@@ -68,7 +68,7 @@ const QuoteCard = ({ quote, index }: { quote: any; index: number }) => (
     className="bg-white bg-opacity-70 backdrop-blur rounded-lg p-5 sm:p-6 shadow-soft border-l-4 border-sky-400"
   >
     <p className="text-sm sm:text-base text-calm-800 italic mb-2">
-      "{quote.quote}"
+      &ldquo;{quote.quote}&rdquo;
     </p>
     <p className="text-xs sm:text-sm text-calm-600 font-medium">
       — {quote.author}
@@ -224,12 +224,12 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <span className="inline">Welcome to </span>
             <motion.span
-              className="relative"
+              className="inline-block"
               animate={{ backgroundPosition: ['0% 50%', '100% 50%'] }}
               transition={{ duration: 3, repeat: Infinity }}
             >
+              <span className="inline">Welcome to </span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-cyan-500 to-teal-600">
                 CalmGames
               </span>
@@ -250,7 +250,7 @@ export default function Home() {
               <FloatingText delay={0.7}>calm</FloatingText>
             </p>
             <p className="text-sm text-calm-600">
-              Take a deep breath. You're safe here. 💙
+              Take a deep breath. You&apos;re safe here. 💙
             </p>
           </motion.div>
 
@@ -403,10 +403,10 @@ export default function Home() {
             animate={{ scale: [1, 1.02, 1] }}
             transition={{ duration: 2, repeat: Infinity }}
           >
-            ✨ You've Got This ✨
+            ✨ You&apos;ve Got This ✨
           </motion.p>
           <p className="text-calm-700 leading-relaxed">
-            It's okay to not be okay. It's okay to take breaks. It's okay to ask for help. 
+            It&apos;s okay to not be okay. It&apos;s okay to take breaks. It&apos;s okay to ask for help. 
             These games are here to support you through the tough moments. 
             Choose what resonates with you, and take it one moment at a time.
           </p>
@@ -469,7 +469,7 @@ export default function Home() {
             transition={{ duration: 3, repeat: Infinity }}
           >
             <p className="text-lg font-semibold text-calm-900">
-              Remember, you're not alone in this journey 💙
+              Remember, you&apos;re not alone in this journey 💙
             </p>
             <div className="flex justify-center gap-2 text-2xl">
               <motion.span animate={{ rotate: [0, 10, -10, 0] }} transition={{ duration: 2, repeat: Infinity }}>
@@ -488,7 +488,7 @@ export default function Home() {
           </motion.div>
 
           <p className="text-calm-700">
-            When anxiety or stress knocks on your door, we're here. Reach out, take a breath, and choose a moment of calm.
+            When anxiety or stress knocks on your door, we&apos;re here. Reach out, take a breath, and choose a moment of calm.
           </p>
           
           <motion.div
@@ -505,7 +505,7 @@ export default function Home() {
               CalmGames © 2025 | A sanctuary for mental wellness
             </p>
             <p className="text-xs text-calm-500">
-              If you're in crisis, please reach out to a mental health professional or contact a crisis helpline.
+              If you&apos;re in crisis, please reach out to a mental health professional or contact a crisis helpline.
             </p>
           </motion.div>
         </div>

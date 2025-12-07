@@ -122,13 +122,13 @@ export default function MoodPage() {
               <div className="space-y-1">
                 {currentMood.name === 'Calm' && (
                   <>
-                    <p className="font-medium text-calm-800">You're in a great place. Keep it up!</p>
+                    <p className="font-medium text-calm-800">You&apos;re in a great place. Keep it up!</p>
                     <p className="text-xs text-calm-600">Maybe explore journaling or the mind garden.</p>
                   </>
                 )}
                 {currentMood.name === 'Stressed' && (
                   <>
-                    <p className="font-medium text-calm-800">Let's bring your stress down</p>
+                    <p className="font-medium text-calm-800">Let&apos;s bring your stress down</p>
                     <p className="text-xs text-calm-600">Try breathing exercises or hold my hand.</p>
                   </>
                 )}
@@ -140,7 +140,7 @@ export default function MoodPage() {
                 )}
                 {currentMood.name === 'Happy' && (
                   <>
-                    <p className="font-medium text-calm-800">That's wonderful! Celebrate it!</p>
+                    <p className="font-medium text-calm-800">That&apos;s wonderful! Celebrate it!</p>
                     <p className="text-xs text-calm-600">Journal this feeling to remember it.</p>
                   </>
                 )}

@@ -163,10 +163,10 @@ export default function WorryBoxPage() {
           <h3 className="font-semibold text-calm-900 mb-2 text-sm">How it works:</h3>
           <ul className="space-y-1 text-xs text-calm-700">
             <li>✓ Write down your worries</li>
-            <li>✓ They're safe in the box</li>
+            <li>✓ They&apos;re safe in the box</li>
             <li>✓ Lock the box to release them</li>
             <li>✓ You can return anytime</li>
-            <li>✓ Worries are temporary—so is this app's storage</li>
+            <li>✓ Worries are temporary—so is this app&apos;s storage</li>
           </ul>
         </motion.div>
       </div>

@@ -165,8 +165,8 @@ export default function CloudsPage() {
           <h3 className="font-semibold text-calm-900 mb-2 text-sm">Tips:</h3>
           <ul className="space-y-1 text-xs text-calm-700">
             <li>• Keep thoughts that serve you</li>
-            <li>• Release thoughts that don't help</li>
-            <li>• Letting go doesn't mean forgetting</li>
+            <li>• Release thoughts that don&apos;t help</li>
+            <li>• Letting go doesn&apos;t mean forgetting</li>
             <li>• You can always revisit or redo</li>
           </ul>
         </motion.div>

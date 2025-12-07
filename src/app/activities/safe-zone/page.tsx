@@ -176,7 +176,7 @@ export default function SafeZonePage() {
             className="bg-green-100 border-2 border-green-400 rounded-lg p-4 text-center mb-3"
           >
             <p className="text-2xl mb-1">✨</p>
-            <p className="text-green-700 font-medium text-sm">Task complete! You've organized your space.</p>
+            <p className="text-green-700 font-medium text-sm">Task complete! You&apos;ve organized your space.</p>
           </motion.div>
         )}
 

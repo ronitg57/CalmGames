@@ -2,12 +2,18 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 export default function ActivityPlaceholder({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
+  const [slug, setSlug] = useState('');
+
+  useEffect(() => {
+    Promise.resolve(params).then(value => setSlug(value.slug));
+  }, [params]);
   return (
     <main className="min-h-screen bg-gradient-to-b from-calm-50 to-lavender-50 flex flex-col items-center justify-center p-4">
       <Link
@@ -31,7 +37,7 @@ export default function ActivityPlaceholder({
         </p>
         <div className="text-4xl mb-8">🎨</div>
         <p className="text-sm text-calm-500">
-          Activity: <span className="font-mono font-semibold">{params.slug}</span>
+          Activity: <span className="font-mono font-semibold">{slug}</span>
         </p>
       </motion.div>
     </main>
