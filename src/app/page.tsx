@@ -502,7 +502,7 @@ export default function Home() {
               Made with care for your wellbeing by <span className="text-sky-600 font-bold">Ronit Goswami</span>
             </p>
             <p className="text-sm text-calm-600 mb-3">
-              CalmGames © 2024 | A sanctuary for mental wellness
+              CalmGames © 2025 | A sanctuary for mental wellness
             </p>
             <p className="text-xs text-calm-500">
               If you're in crisis, please reach out to a mental health professional or contact a crisis helpline.

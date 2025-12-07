@@ -259,7 +259,7 @@ calmgames/
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/calmgames.git
+git clone https://github.com/ronitg57/calmgames.git
 cd calmgames
 
 # Install dependencies
@@ -417,8 +417,8 @@ MIT License — See LICENSE file for details
 
 Found a bug? Have an idea? Want to contribute?
 
-- **Issues:** [GitHub Issues](https://github.com/YOUR_USERNAME/calmgames/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/YOUR_USERNAME/calmgames/discussions)
+- **Issues:** [GitHub Issues](https://github.com/ronitg57/calmgames/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/ronitg57/calmgames/discussions)
 - **Email:** [Your Email]
 
 ---
@@ -429,6 +429,6 @@ Found a bug? Have an idea? Want to contribute?
 
 Made with 💙 to help you find moments of peace.
 
-**CalmGames © 2024 | A sanctuary for mental wellness**
+**CalmGames © 2025 | A sanctuary for mental wellness**
 
 </div>
