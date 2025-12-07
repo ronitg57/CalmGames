@@ -1,27 +1,41 @@
 {
-  "name": "CalmGames",
+  "name": "CalmGames — Mental Wellness Games",
   "short_name": "CalmGames",
-  "description": "A personal, calming web app for anxiety, panic, stress, and concentration support.",
+  "description": "Free calming games for anxiety relief, stress management, and mindfulness. 10 activities designed for your mental wellness.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#f9fafb",
-  "theme_color": "#f9fafb",
+  "theme_color": "#38bdf8",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/favicon.ico",
-      "sizes": "16x16",
-      "type": "image/x-icon"
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
-  "categories": ["productivity", "wellness"],
-  "screenshots": [
-    {
-      "src": "/screenshots/home.png",
-      "sizes": "540x720",
-      "type": "image/png",
-      "form_factor": "narrow"
-    }
-  ]
+  "categories": ["health", "wellness", "lifestyle", "medical"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7"
 }

@@ -159,7 +159,9 @@ export default function BreathePage() {
           className="text-center flex-1"
         >
           <h1 className="text-2xl sm:text-3xl font-bold text-calm-900">Breathe With Me</h1>
-          <p className="text-xs sm:text-sm text-calm-600 mt-1">Follow the bubble. You&apos;re safe.</p>
+          <p className="text-xs sm:text-sm text-calm-600 mt-1">
+            Guided breathing for <strong>anxiety relief</strong> and <strong>panic attack support</strong>. Follow the bubble. You&apos;re safe.
+          </p>
         </motion.div>
         <div className="w-12"></div>
       </div>
@@ -320,13 +322,19 @@ export default function BreathePage() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-12 bg-white bg-opacity-60 backdrop-blur rounded-lg p-6 shadow-soft"
         >
-          <h3 className="font-semibold text-calm-900 mb-3">Breathing Tips:</h3>
+          <h2 className="font-semibold text-calm-900 mb-3 text-base">How Breathing Exercises Help:</h2>
+          <p className="text-sm text-calm-700 mb-3">
+            <strong>Deep breathing</strong> activates your parasympathetic nervous system, reducing cortisol (stress hormone) and lowering heart rate. 
+            This guided breathing exercise uses <strong>box breathing</strong> techniques proven to calm anxiety, manage panic attacks, and improve focus.
+          </p>
+          <h3 className="font-semibold text-calm-900 mb-2 text-sm">Tips for Best Results:</h3>
           <ul className="space-y-2 text-sm text-calm-700">
             <li>• Focus on the bubble, not your surroundings</li>
             <li>• Breathe naturally—no forcing</li>
             <li>• If your mind wanders, gently bring it back</li>
-            <li>• Use this whenever you feel anxious</li>
+            <li>• Use this whenever you feel anxious or overwhelmed</li>
             <li>• Consistency matters more than perfection</li>
+            <li>• Practice daily for 2-5 minutes to build resilience</li>
           </ul>
         </motion.div>
 

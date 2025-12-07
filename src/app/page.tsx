@@ -44,11 +44,15 @@ const MotivationalCard = ({ card, index }: { card: any; index: number }) => (
     viewport={{ once: true }}
     whileHover={{ y: -6, scale: 1.02 }}
     className={`bg-gradient-to-br ${card.gradient} rounded-xl p-4 sm:p-6 shadow-soft border border-white flex flex-col items-center text-center gap-2 min-h-fit`}
+    role="article"
+    aria-label={`Motivational message: ${card.text}`}
   >
     <motion.span
       className="text-3xl sm:text-4xl"
       animate={{ scale: [1, 1.1, 1] }}
       transition={{ duration: 2, repeat: Infinity }}
+      role="img"
+      aria-label={`${card.emoji} emoji`}
     >
       {card.emoji}
     </motion.span>
@@ -101,7 +105,7 @@ const ActivityCard = ({ activity, index }: { activity: any; index: number }) => 
       onHoverEnd={() => setIsHovered(false)}
       className="h-full"
     >
-      <Link href={`/activities/${activity.slug}`}>
+      <Link href={`/activities/${activity.slug}`} aria-label={`Go to ${activity.name} activity`}>
         <motion.div
           className={`group relative overflow-hidden rounded-2xl bg-gradient-to-br ${activity.color} p-8 h-full shadow-soft transition-all duration-300 cursor-pointer flex flex-col`}
           whileHover={{ 
@@ -109,12 +113,14 @@ const ActivityCard = ({ activity, index }: { activity: any; index: number }) => 
             boxShadow: '0 20px 40px rgba(0,0,0,0.1)'
           }}
           whileTap={{ scale: 0.98 }}
+          role="article"
         >
           {/* Background decoration */}
           <motion.div
             className="absolute top-0 right-0 w-32 h-32 bg-white opacity-0 group-hover:opacity-10 rounded-full blur-3xl"
             animate={isHovered ? { scale: 1.2 } : { scale: 1 }}
             transition={{ duration: 0.4 }}
+            aria-hidden="true"
           />
 
           {/* Content */}
@@ -124,6 +130,8 @@ const ActivityCard = ({ activity, index }: { activity: any; index: number }) => 
               className="text-5xl mb-4"
               animate={isHovered ? { scale: 1.2, rotate: 12 } : { scale: 1, rotate: 0 }}
               transition={{ duration: 0.3 }}
+              role="img"
+              aria-label={`${activity.name} icon: ${activity.emoji}`}
             >
               {activity.emoji}
             </motion.div>
@@ -252,6 +260,10 @@ export default function Home() {
             <p className="text-sm text-calm-600">
               Take a deep breath. You&apos;re safe here. 💙
             </p>
+            <p className="text-sm text-calm-500 max-w-2xl mx-auto mt-4 leading-relaxed">
+              <strong className="text-calm-700">Free mental wellness tools</strong> designed for anxiety relief, stress management, panic attack support, and mindfulness practice. 
+              No signup required—just instant access to calming activities when you need them most.
+            </p>
           </motion.div>
 
           <motion.div
@@ -259,6 +271,7 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.8 }}
             className="flex justify-center gap-2 pt-4"
+            aria-hidden="true"
           >
             {[...Array(3)].map((_, i) => (
               <motion.div
