@@ -62,7 +62,7 @@ export default function MoodPage() {
   const currentMood = moods.find(m => m.color === selectedColor);
 
   return (
-    <main className="fixed inset-0 bg-gradient-to-b from-calm-50 to-calm-100 flex flex-col overflow-hidden">
+    <main className={`fixed inset-0 bg-gradient-to-b ${bgColor} flex flex-col overflow-hidden`}>
       {/* Header */}
       <div className="relative p-4 sm:p-6 flex items-center justify-between">
         <Link href="/" className="text-calm-600 hover:text-calm-900 text-sm font-medium z-10">
